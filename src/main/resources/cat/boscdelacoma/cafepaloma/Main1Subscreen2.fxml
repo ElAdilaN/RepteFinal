@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cat.boscdelacoma.cafepaloma.Main1Subscreen2Controller">
+   <children>
+      <AnchorPane prefHeight="446.0" prefWidth="600.0">
+         <children>
+            <GridPane layoutX="50.0" prefHeight="150.0" prefWidth="168.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label text="Worker Full Name : " textAlignment="CENTER" GridPane.halignment="RIGHT">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+            <GridPane layoutX="239.0" prefHeight="150.0" prefWidth="263.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <TextField fx:id="fieldWorkerName" prefHeight="26.0" prefWidth="251.0" />
+               </children>
+            </GridPane>
+            <Button fx:id="btnWorkerNew" layoutX="65.0" layoutY="168.0" mnemonicParsing="false" onAction="#clickNew" prefHeight="26.0" prefWidth="75.0" text="NEW" />
+            <Button fx:id="btnWorkerSave" layoutX="202.0" layoutY="168.0" mnemonicParsing="false" onAction="#addWorker" prefHeight="26.0" prefWidth="66.0" text="SAVE" />
+            <Button fx:id="btnWorkerUpdate" layoutX="337.0" layoutY="168.0" mnemonicParsing="false" onAction="#UpdateWorker" prefHeight="26.0" prefWidth="75.0" text="UPDATE" />
+            <Button fx:id="btnWorkerDelete" layoutX="465.0" layoutY="168.0" mnemonicParsing="false" onAction="#DeleteWorker" prefHeight="26.0" prefWidth="66.0" text="DELETE" />
+            <Label layoutX="103.0" layoutY="209.0" prefHeight="27.0" prefWidth="98.0" text="SEARCH : ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="fieldWorkerSearch" layoutX="194.0" layoutY="211.0" prefHeight="26.0" prefWidth="308.0" />
+            <TableView fx:id="tableViewWorker" layoutX="88.0" layoutY="249.0" onMouseClicked="#mouseClicked" prefHeight="182.0" prefWidth="435.0">
+               <columns>
+                  <TableColumn fx:id="colIdWorker" minWidth="0.0" prefWidth="133.60000610351562" text="ID" />
+                  <TableColumn fx:id="colNameWorker" prefWidth="300.00001525878906" text="NAME" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

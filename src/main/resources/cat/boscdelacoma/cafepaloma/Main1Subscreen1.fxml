@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="cat.boscdelacoma.cafepaloma.Main1Subscreen1Controller">
+   <children>
+      <Text layoutX="141.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="screen 1" wrappingWidth="293.33673095703125" />
+   </children>
+</AnchorPane>
